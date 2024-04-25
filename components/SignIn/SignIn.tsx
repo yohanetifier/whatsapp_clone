@@ -7,7 +7,7 @@ interface Props {}
 
 const SignIn = (props: Props) => {
 	return (
-		<div className="bg-white rounded-lg w-[25%] h-[50%] flex justify-center ">
+		<div className="bg-white rounded-lg w-[500px] h-[50%] flex justify-center ">
 			<div className=" h-full w-[70%]">
 				<div className="w-[100%] h-[50%]  flex justify-center">
 					<Image
