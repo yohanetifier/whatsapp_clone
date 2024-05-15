@@ -6,6 +6,7 @@ export default function Page() {
 	if (userId) {
 		console.log('userId', userId);
 	}
+
 	return (
 		<div className="flex justify-center items-center h-[100vh]">
 			<SignIn path="/sign-in" />
