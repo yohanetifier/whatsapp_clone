@@ -10,10 +10,8 @@ export default async function Home() {
 		redirect('/sign-in');
 	}
 	return (
-		<div className=" bg-gray-100 w-full h-[100vh] flex justify-center">
-			<AlignWrapper>
-				<PanelLeft />
-			</AlignWrapper>
+		<div className=" bg-gray-100 w-full h-[100vh] flex ">
+			<PanelLeft />
 		</div>
 	);
 }
