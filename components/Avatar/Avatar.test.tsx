@@ -9,5 +9,6 @@ describe('Avatar', () => {
 		);
 		const img = screen.getByRole('img');
 		expect(img).toBeInTheDocument();
+		// expect(img.src).toMatch('*avatar.jpg*');
 	});
 });

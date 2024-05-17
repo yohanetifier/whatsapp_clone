@@ -8,7 +8,10 @@ interface Props {
 
 const Avatar = ({ pictureSrc, pictureAlt }: Props) => {
 	return (
-		<div className="w-[47px] h-[47px] border-2 border-red-500 rounded-full overflow-hidden">
+		<div
+			data-testid="avatar"
+			className="w-[47px] h-[47px] border-2 border-red-500 rounded-full overflow-hidden"
+		>
 			<Image
 				src={pictureSrc}
 				alt={pictureAlt}

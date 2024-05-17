@@ -5,7 +5,10 @@ interface Props {}
 
 const SearchBar = (props: Props) => {
 	return (
-		<div className="flex border-2 items-center gap-2 mt-[20px] h-[40px] rounded-full p-5">
+		<div
+			data-testid="searchbar"
+			className="flex border-2 items-center gap-2 mt-[20px] h-[40px] rounded-full p-5"
+		>
 			<RiSearch2Line />
 			<input
 				type="text"
