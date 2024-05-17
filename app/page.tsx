@@ -1,7 +1,8 @@
 import React from 'react';
-import SignIn from '@/components/SignIn/SignIn';
-import { auth, currentUser } from '@clerk/nextjs/server';
+import { currentUser } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
+import PanelLeft from '@/components/PanelLeft/PanelLeft';
+import AlignWrapper from '@/components/AlignWrapper/AlignWrapper';
 
 export default async function Home() {
 	const user = await currentUser();
@@ -9,8 +10,10 @@ export default async function Home() {
 		redirect('/sign-in');
 	}
 	return (
-		<div className="border-2 border-red-500 bg-gray-100 w-full h-[100vh] flex justify-center items-center ">
-			<SignIn />
+		<div className=" bg-gray-100 w-full h-[100vh] flex justify-center">
+			<AlignWrapper>
+				<PanelLeft />
+			</AlignWrapper>
 		</div>
 	);
 }
