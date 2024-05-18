@@ -2,8 +2,13 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { ClerkProvider } from '@clerk/nextjs';
+import { Plus_Jakarta_Sans } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
+const plusJakartaSans = Plus_Jakarta_Sans({
+	subsets: ['latin'],
+	variable: '--font-family-plus-jakarta-sans'
+});
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -17,8 +22,8 @@ export default function RootLayout({
 }>) {
 	return (
 		<ClerkProvider>
-			<html lang="en">
-				<body className={inter.className}>{children}</body>
+			<html lang="en" className={`${plusJakartaSans.variable}`}>
+				<body>{children}</body>
 			</html>
 		</ClerkProvider>
 	);

@@ -4,6 +4,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 import Avatar from '../Avatar/Avatar';
 import SearchBar from '../SearchBar/SearchBar';
 import FilterBar from '../FilterBar/FilterBar';
+import ContactList from '../ContactList/ContactList';
 
 interface Props {}
 
@@ -27,6 +28,7 @@ const PanelLeft = (props: Props) => {
 			</div>
 			<SearchBar />
 			<FilterBar data={data} />
+			<ContactList />
 		</div>
 	);
 };

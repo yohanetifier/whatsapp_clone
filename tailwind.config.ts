@@ -58,6 +58,9 @@ const config = {
 					foreground: 'hsl(var(--card-foreground))'
 				}
 			},
+			fontFamily: {
+				plusJakartaSans: ['var(--font-family-plus-jakarta-sans)']
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',

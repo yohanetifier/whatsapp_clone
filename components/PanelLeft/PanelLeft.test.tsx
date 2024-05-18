@@ -11,6 +11,6 @@ describe('PanelLeft', () => {
 		expect(screen.getByTestId('avatar')).toBeInTheDocument();
 		expect(searchbar).toBeInTheDocument();
 		expect(input).toBeInTheDocument();
-		expect(filterBar).not.toBeInTheDocument();
+		expect(filterBar).toBeInTheDocument();
 	});
 });
