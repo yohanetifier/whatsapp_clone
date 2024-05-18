@@ -8,8 +8,8 @@ const ContactCard = (props: Props) => {
 		<div className="mt-2 flex">
 			<div className="w-[70px] h-[70px] border-2 border-green-500 rounded-lg">
 				<Image
-					src={''}
-					alt={''}
+					src={'/avatar.jpg'}
+					alt={'avatar'}
 					className="w-[100%] h-[100%] "
 					width={0}
 					height={0}
