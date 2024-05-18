@@ -53,10 +53,37 @@ const ContactList = (props: Props) => {
 			contactLastMessage: 'Hello',
 			contactTime: '12:00',
 			numberOfUnreadMessages: 3
+		},
+		{
+			contactPictureSrc: '/avatar.jpg',
+			contactPictureAlt: 'avatar',
+			contactName: 'John Doe',
+			contactLastMessage: 'Hello',
+			contactTime: '12:00',
+			numberOfUnreadMessages: 3
+		},
+		{
+			contactPictureSrc: '/avatar.jpg',
+			contactPictureAlt: 'avatar',
+			contactName: 'John Doe',
+			contactLastMessage: 'Hello',
+			contactTime: '12:00',
+			numberOfUnreadMessages: 3
+		},
+		{
+			contactPictureSrc: '/avatar.jpg',
+			contactPictureAlt: 'avatar',
+			contactName: 'John Doe',
+			contactLastMessage: 'Hello',
+			contactTime: '12:00',
+			numberOfUnreadMessages: 3
 		}
 	];
 	return (
-		<div data-testid="contactList" className="mt-8">
+		<div
+			data-testid="contactList"
+			className="mt-8 h-[690px] overflow-scroll"
+		>
 			{contact.map(
 				(
 					{
