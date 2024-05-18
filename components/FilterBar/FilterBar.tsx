@@ -10,7 +10,10 @@ interface Props {
 
 const FilterBar = ({ data }: Props) => {
 	return (
-		<div className="border-2 flex  mt-4 rounded-[14px] overflow-hidden">
+		<div
+			data-testid="filterBar"
+			className="border-2 flex  mt-4 rounded-[14px] overflow-hidden"
+		>
 			{data.map(({ label }, index) => (
 				<div
 					key={index}

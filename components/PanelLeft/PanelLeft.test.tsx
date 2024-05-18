@@ -7,8 +7,10 @@ describe('PanelLeft', () => {
 		render(<PanelLeft />);
 		const searchbar = screen.getByTestId('searchbar');
 		const input = screen.getByPlaceholderText('Search or start a new chat');
+		const filterBar = screen.getByTestId('filterBar');
 		expect(screen.getByTestId('avatar')).toBeInTheDocument();
 		expect(searchbar).toBeInTheDocument();
 		expect(input).toBeInTheDocument();
+		expect(filterBar).not.toBeInTheDocument();
 	});
 });
