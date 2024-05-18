@@ -5,7 +5,7 @@ interface Props {}
 
 const ContactCard = (props: Props) => {
 	return (
-		<div className="mt-2 flex">
+		<div className="mt-2 flex ">
 			<div className="w-[70px] h-[70px] border-2 border-green-500 rounded-lg">
 				<Image
 					src={'/avatar.jpg'}
@@ -21,10 +21,10 @@ const ContactCard = (props: Props) => {
 				</h2>
 				<p className="text-[14px]">Haha oh man</p>
 			</div>
-			<div className="mt-3 ">
-				<p className="text-[11px]">07:38 am</p>
+			<div className=" flex-col  pt-3">
+				<p className="text-[11px]  mb-1 border-green-500">07:38 am</p>
 				<div className="flex justify-end">
-					<p className="rounded-full bg-primary w-[30px] h-[30px] flex justify-center items-center">
+					<p className="rounded-full bg-primary w-[23px] h-[23px] flex justify-center items-center text-[11px]">
 						3
 					</p>
 				</div>
