@@ -1,31 +1,47 @@
 import React from 'react';
 import Image from 'next/image';
 
-interface Props {}
+interface Props {
+	contactPictureSrc: string;
+	contactPictureAlt: string;
+	contactName: string;
+	contactLastMessage: string;
+	contactTime: string;
+	numberOfUnreadMessages?: number;
+}
 
-const ContactCard = (props: Props) => {
+const ContactCard = ({
+	contactLastMessage,
+	contactName,
+	contactPictureSrc,
+	contactPictureAlt,
+	contactTime,
+	numberOfUnreadMessages
+}: Props) => {
 	return (
-		<div className="mt-2 flex ">
+		<div className="mb-[18px] flex ">
 			<div className="w-[70px] h-[70px] border-2 border-green-500 rounded-lg">
 				<Image
-					src={'/avatar.jpg'}
-					alt={'avatar'}
+					src={contactPictureSrc}
+					alt={contactPictureAlt}
 					className="w-[100%] h-[100%] "
 					width={0}
 					height={0}
 				/>
 			</div>
-			<div className="ml-2 grow mt-1">
-				<h2 className="font-plusJakartaSans text-[18px] font-bold">
-					Jane Cooper
+			<div className="flex-col  ml-2 grow mt-1">
+				<h2 className="mb-2 font-plusJakartaSans text-[18px] font-bold">
+					{contactName}
 				</h2>
-				<p className="text-[14px]">Haha oh man</p>
+				<p className="text-[14px]">{contactLastMessage}</p>
 			</div>
 			<div className=" flex-col  pt-3">
-				<p className="text-[11px]  mb-1 border-green-500">07:38 am</p>
+				<p className="text-[11px]  mb-1 border-green-500">
+					{contactTime}
+				</p>
 				<div className="flex justify-end">
 					<p className="rounded-full bg-primary w-[23px] h-[23px] flex justify-center items-center text-[11px]">
-						3
+						{numberOfUnreadMessages}
 					</p>
 				</div>
 			</div>
