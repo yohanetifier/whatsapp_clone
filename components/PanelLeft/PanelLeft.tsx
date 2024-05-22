@@ -5,6 +5,7 @@ import Avatar from '../Avatar/Avatar';
 import SearchBar from '../SearchBar/SearchBar';
 import FilterBar from '../FilterBar/FilterBar';
 import ContactList from '../ContactList/ContactList';
+import { MdMessage } from 'react-icons/md';
 
 interface Props {}
 
@@ -21,7 +22,7 @@ const PanelLeft = (props: Props) => {
 		}
 	];
 	return (
-		<div className="h-[100vh] w-[425px] p-8 bg-backgroundPrimary  ">
+		<div className="relative h-[100vh] w-[425px] p-8 bg-backgroundPrimary  ">
 			<div className="flex justify-between items-center">
 				<Avatar pictureSrc={'/avatar.jpg'} pictureAlt={'avatar'} />
 				<IoIosArrowDown className="w-[28px] h-[28px]" />
@@ -29,6 +30,9 @@ const PanelLeft = (props: Props) => {
 			<SearchBar />
 			<FilterBar data={data} />
 			<ContactList />
+			<div className="absolute bottom-[30px] right-[30px] rounded-full w-[66px] h-[66px] bg-green-500 flex justify-center items-center ">
+				<MdMessage className="w-[28px] h-[28px] text-white" />
+			</div>
 		</div>
 	);
 };
