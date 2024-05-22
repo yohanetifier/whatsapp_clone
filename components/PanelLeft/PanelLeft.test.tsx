@@ -14,5 +14,6 @@ describe('PanelLeft', () => {
 		expect(input).toBeInTheDocument();
 		expect(filterBar).toBeInTheDocument();
 		expect(contactList).toBeInTheDocument();
+		expect(screen.getByTestId('createMessage')).toBeInTheDocument();
 	});
 });
