@@ -5,4 +5,5 @@ export interface Contact {
 	contactLastMessage: string;
 	contactTime: string;
 	numberOfUnreadMessages: number;
+	onlineStatus?: boolean;
 }

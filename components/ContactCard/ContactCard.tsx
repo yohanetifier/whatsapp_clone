@@ -5,9 +5,10 @@ interface Props {
 	contactPictureSrc: string;
 	contactPictureAlt: string;
 	contactName: string;
-	contactLastMessage: string;
-	contactTime: string;
+	contactLastMessage?: string;
+	contactTime?: string;
 	numberOfUnreadMessages?: number;
+	onlineStatus?: boolean;
 }
 
 const ContactCard = ({
@@ -16,7 +17,8 @@ const ContactCard = ({
 	contactPictureSrc,
 	contactPictureAlt,
 	contactTime,
-	numberOfUnreadMessages
+	numberOfUnreadMessages,
+	onlineStatus
 }: Props) => {
 	return (
 		<div className="mb-[18px] flex ">
@@ -33,7 +35,10 @@ const ContactCard = ({
 				<h2 className="mb-2 font-plusJakartaSans text-[18px] font-bold">
 					{contactName}
 				</h2>
-				<p className="text-[14px]">{contactLastMessage}</p>
+				<p className="text-[14px]">
+					{contactLastMessage}
+					{onlineStatus}
+				</p>
 			</div>
 			<div className=" flex-col  pt-3">
 				<p className="text-[11px]  mb-1 border-green-500">
