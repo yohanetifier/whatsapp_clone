@@ -3,5 +3,13 @@ import { render, screen } from '@testing-library/react';
 import TopBar from './TopBar';
 
 describe('TopBar', () => {
-	it('should render without crash', () => {});
+	beforeEach(() => {
+		render(<TopBar />);
+	});
+	it('should render the contactCard', () => {
+		expect(screen.getByTestId('contactCard')).toBeInTheDocument();
+	});
+	it('should render contactOptions', () => {
+		expect(screen.getByTestId('contactOptions')).toBeInTheDocument();
+	});
 });

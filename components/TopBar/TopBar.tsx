@@ -1,11 +1,12 @@
 import React from 'react';
 import ContactCard from '../ContactCard/ContactCard';
+import ContactOptions from '../ContactOptions/ContactOptions';
 
 interface Props {}
 
 const TopBar = (props: Props) => {
 	return (
-		<div className="p-6">
+		<div data-testid="topBar" className="p-6 flex">
 			<ContactCard
 				contactPictureSrc={''}
 				contactPictureAlt={''}
@@ -14,6 +15,7 @@ const TopBar = (props: Props) => {
 				contactTime={''}
 				onlineStatus={true}
 			/>
+			<ContactOptions />
 		</div>
 	);
 };
