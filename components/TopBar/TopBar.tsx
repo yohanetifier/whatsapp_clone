@@ -9,8 +9,8 @@ const TopBar = (props: Props) => {
 		<div data-testid="topBar" className="p-6 flex">
 			<div className="border-2 border-red-500 grow">
 				<ContactCard
-					contactPictureSrc={''}
-					contactPictureAlt={''}
+					contactPictureSrc={'/test.jpg'}
+					contactPictureAlt={'test'}
 					contactName="Jane Doe"
 					contactLastMessage={''}
 					contactTime={''}
