@@ -6,8 +6,8 @@ interface Props {}
 
 const TopBar = (props: Props) => {
 	return (
-		<div data-testid="topBar" className="p-6 flex">
-			<div className="border-2 border-red-500 grow">
+		<div data-testid="topBar" className="p-6 flex items-center">
+			<div className="border-2 border-red-500 w-[600px]">
 				<ContactCard
 					contactPictureSrc={'/test.jpg'}
 					contactPictureAlt={'test'}
