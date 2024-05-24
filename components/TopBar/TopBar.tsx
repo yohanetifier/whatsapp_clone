@@ -7,15 +7,19 @@ interface Props {}
 const TopBar = (props: Props) => {
 	return (
 		<div data-testid="topBar" className="p-6 flex">
-			<ContactCard
-				contactPictureSrc={''}
-				contactPictureAlt={''}
-				contactName="Jane Doe"
-				contactLastMessage={''}
-				contactTime={''}
-				onlineStatus={true}
-			/>
-			<ContactOptions />
+			<div className="border-2 border-red-500 grow">
+				<ContactCard
+					contactPictureSrc={''}
+					contactPictureAlt={''}
+					contactName="Jane Doe"
+					contactLastMessage={''}
+					contactTime={''}
+					onlineStatus={true}
+				/>
+			</div>
+			<div className="">
+				<ContactOptions />
+			</div>
 		</div>
 	);
 };

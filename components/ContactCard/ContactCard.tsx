@@ -13,7 +13,7 @@ const ContactCard = ({
 }: Contact) => {
 	return (
 		<div data-testid="contactCard" className="mb-[18px] flex ">
-			<div className="w-[70px] h-[70px] border-2 border-green-500 rounded-lg">
+			<div className="w-[70px] h-[70px] border-2 border-green-500 rounded-lg ">
 				<Image
 					src={contactPictureSrc}
 					alt={contactPictureAlt}
