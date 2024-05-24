@@ -9,9 +9,10 @@ const TopBar = (props: Props) => {
 			<ContactCard
 				contactPictureSrc={''}
 				contactPictureAlt={''}
-				contactName={''}
+				contactName="Jane Doe"
 				contactLastMessage={''}
 				contactTime={''}
+				onlineStatus={true}
 			/>
 		</div>
 	);
