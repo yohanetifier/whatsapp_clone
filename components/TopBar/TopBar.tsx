@@ -8,7 +8,7 @@ const TopBar = (props: Props) => {
 	return (
 		<div
 			data-testid="topBar"
-			className=" p-2 flex items-center w-[100%] justify-between"
+			className=" p-2 flex items-center w-[100%] h-[11%]  justify-between"
 		>
 			<div className=" w-[600px]">
 				<ContactCard
