@@ -8,9 +8,9 @@ const TopBar = (props: Props) => {
 	return (
 		<div
 			data-testid="topBar"
-			className="flex items-center border-2 border-green-500 w-[100%]"
+			className=" p-2 flex items-center w-[100%] justify-between"
 		>
-			<div className="border-2 border-red-500 w-[600px]">
+			<div className=" w-[600px]">
 				<ContactCard
 					contactPictureSrc={'/test.jpg'}
 					contactPictureAlt={'test'}

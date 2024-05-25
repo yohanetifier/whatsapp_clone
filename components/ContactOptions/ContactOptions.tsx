@@ -8,15 +8,25 @@ interface Props {}
 
 const ContactOptions = (props: Props) => {
 	const size = 'w-[28px] h-[28px]';
+	const options = [
+		{
+			icon: <MdPhoneInTalk className={`${size}`} />
+		},
+		{
+			icon: <BsCameraVideo className={`${size}`} />
+		},
+		{
+			icon: <CiSearch className={`${size}`} />
+		}
+	];
 	return (
 		<div
 			data-testid="contactOptions"
-			className="flex justify-between w-[200px]"
+			className="flex justify-between w-[120px]"
 		>
-			<MdPhoneInTalk className={`${size}`} />
-			<BsCameraVideo className={`${size}`} />
-			<CiSearch className={`${size}`} />
-			<IoIosArrowDown className={`${size} ml-4`} />
+			{options.map(({ icon }, index) => (
+				<button key={index}>{icon}</button>
+			))}
 		</div>
 	);
 };
