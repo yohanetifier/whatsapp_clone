@@ -1,10 +1,15 @@
 import React from 'react';
 
-type Props = Pick<HTMLInputElement, 'type'> &
-	Partial<Pick<HTMLInputElement, 'placeholder'>>;
+interface Props {
+	type: 'text';
+	placeholder?: string;
+	className?: string;
+}
 
-const Input = ({ type, placeholder }: Props) => {
-	return <input type={type} placeholder={placeholder} />;
+const Input = ({ type, placeholder, className }: Props) => {
+	return (
+		<input type={type} placeholder={placeholder} className={className} />
+	);
 };
 
 export default Input;

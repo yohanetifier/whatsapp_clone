@@ -3,11 +3,11 @@ import { MdPhoneInTalk } from 'react-icons/md';
 import { BsCameraVideo } from 'react-icons/bs';
 import { CiSearch } from 'react-icons/ci';
 import { IoIosArrowDown } from 'react-icons/io';
+import { size } from '@/lib/utils';
 
 interface Props {}
 
 const ContactOptions = (props: Props) => {
-	const size = 'w-[28px] h-[28px]';
 	const options = [
 		{
 			icon: <MdPhoneInTalk className={`${size}`} />
