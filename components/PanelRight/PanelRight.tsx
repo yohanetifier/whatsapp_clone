@@ -5,7 +5,7 @@ interface Props {}
 
 const PanelRight = (props: Props) => {
 	return (
-		<div>
+		<div className="border-2 border-red-500 w-[75%]">
 			<TopBar />
 		</div>
 	);

@@ -22,7 +22,7 @@ const PanelLeft = (props: Props) => {
 		}
 	];
 	return (
-		<div className="relative h-[100vh] w-[425px] p-8 bg-backgroundPrimary">
+		<div className="relative h-[100vh] w-[20%] p-8 bg-backgroundPrimary">
 			<div className="flex justify-between items-center">
 				<Avatar pictureSrc={'/avatar.jpg'} pictureAlt={'avatar'} />
 				<IoIosArrowDown className="w-[28px] h-[28px]" />

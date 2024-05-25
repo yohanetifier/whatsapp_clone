@@ -6,7 +6,10 @@ interface Props {}
 
 const TopBar = (props: Props) => {
 	return (
-		<div data-testid="topBar" className="p-6 flex items-center">
+		<div
+			data-testid="topBar"
+			className="flex items-center border-2 border-green-500 w-[100%]"
+		>
 			<div className="border-2 border-red-500 w-[600px]">
 				<ContactCard
 					contactPictureSrc={'/test.jpg'}
